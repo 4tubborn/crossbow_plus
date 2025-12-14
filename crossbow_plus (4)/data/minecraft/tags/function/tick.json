@@ -1,0 +1,8 @@
+{
+    "values":[
+        "cbp:tick",
+        "cbp:after_action/rm_tmp_entity",
+        "cbp:after_action/headwear/headwear_entity",
+        "cbp:after_action/undying/undying_detect"
+    ]
+}

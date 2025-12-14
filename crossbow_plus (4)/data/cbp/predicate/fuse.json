@@ -1,0 +1,19 @@
+{
+    "condition":"any_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+                "predicate": {
+                    "nbt": "{\"fuse\":79s}"
+                }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+                "predicate": {
+                    "nbt": "{\"fuse\":80s}"
+                }
+        }
+    ]
+}

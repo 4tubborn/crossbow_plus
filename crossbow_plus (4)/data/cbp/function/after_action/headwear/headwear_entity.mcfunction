@@ -1,0 +1,2 @@
+#execute as @e[tag=cbp.headwear] at @s if entity @n[distance=..2,type=!falling_block] run say 1
+execute as @e[tag=cbp.headwear,type=falling_block,distance=0..] at @s if entity @n[distance=..2,type=!falling_block] run function cbp:after_action/headwear/apply_headwear with entity @s BlockState
