@@ -1,5 +1,11 @@
 # Crossbow Plus
 A Minecraft datapack that modifies the logic of crossbows.
+* supported versions: 1.21-1.21.10
+* develop in 25w43a
+
+The part of updating bundle contents needs modifying in 1.21.11 due to the change of item modifier.
+
+Actually I am not sure about the min compatible version. Maybe you can have a try :)
 
 ## Features
 ### More Projectiles
