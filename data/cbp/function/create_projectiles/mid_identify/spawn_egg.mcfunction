@@ -1,0 +1,1 @@
+$return run scoreboard players get #$(id) cbp.spawn_egg

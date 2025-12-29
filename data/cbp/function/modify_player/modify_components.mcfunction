@@ -1,0 +1,1 @@
+$item modify entity @s weapon.mainhand {function:"modify_contents",component:"charged_projectiles",modifier:{"function":"set_components","components":$(components)}}

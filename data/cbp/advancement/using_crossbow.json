@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:crossbow"
+    },
+    "title": "",
+    "description": "",
+    "background": "minecraft:item/crossbow_arrow",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "use_crossbow": {
+      "trigger": "shot_crossbow",
+      "conditions": {
+        "item": {
+          "items": "minecraft:crossbow",
+          "components": {
+            "minecraft:custom_data": {
+              "item_projectiles": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "use_crossbow"
+    ]
+  ],
+  "rewards": {
+    "function": "cbp:used_crossbow/used_crossbow"
+  },
+  "sends_telemetry_event": false
+}

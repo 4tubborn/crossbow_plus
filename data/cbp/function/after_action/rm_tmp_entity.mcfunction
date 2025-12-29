@@ -1,0 +1,1 @@
+execute as @e[type=item,tag=cbp.remove_item_projectiles,distance=0..,predicate=cbp:on_ground] run kill @s

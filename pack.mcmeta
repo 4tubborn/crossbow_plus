@@ -1,0 +1,18 @@
+{
+    "pack":{
+        "description":"Crossbow SE Ultra Pro Max Plus",
+        "min_format": 48,
+        "max_format": 114514,        
+        "supported_formats": [48,81],
+        "pack_format": 71
+    },
+    "overlays": {
+        "entries": [
+            {
+                "directory": "after_1.21.11",
+                "max_format": 114514,
+                "min_format": 91
+            }
+        ]
+    }
+}

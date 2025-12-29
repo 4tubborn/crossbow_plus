@@ -1,0 +1,2 @@
+#25w43a之前
+$item modify entity @s weapon.offhand {"function":"modify_contents",component:"bundle_contents",modifier:{function:"filtered",item_filter:{items:"$(id)"},modifier:{"function":"set_count",add:true,count:-1}}}
