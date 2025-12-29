@@ -1,1 +1,0 @@
-execute as @e[type=item,tag=cbp.remove_item_projectiles,distance=0..] if data entity @s {OnGround:true} run kill @s

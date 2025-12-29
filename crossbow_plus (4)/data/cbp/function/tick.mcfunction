@@ -1,1 +1,0 @@
-execute as @a if items entity @s weapon.mainhand crossbow run function cbp:tick_charged

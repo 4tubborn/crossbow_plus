@@ -1,1 +1,0 @@
-schedule function cbp:enchantment/insta_expl2 1t

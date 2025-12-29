@@ -1,1 +1,0 @@
-schedule function cbp:enchantment/reduce_damage2 1t
