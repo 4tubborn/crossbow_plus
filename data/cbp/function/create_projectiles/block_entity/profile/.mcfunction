@@ -1,0 +1,3 @@
+data modify entity @n[type=falling_block,tag=item_projectiles,distance=..5] TileEntityData.profile set from storage cbp tmp_projectile_id.components."minecraft:profile"
+data modify entity @n[type=falling_block,tag=item_projectiles,distance=..5] TileEntityData.custom_name set from storage cbp tmp_projectile_id.components."minecraft:custom_name"
+data modify entity @n[type=falling_block,tag=item_projectiles,distance=..5] TileEntityData.note_block_sound set from storage cbp tmp_projectile_id.components."minecraft:note_block_sound"

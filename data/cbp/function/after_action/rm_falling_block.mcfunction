@@ -8,4 +8,3 @@ scoreboard players reset #success cbp.success
 tag @n[tag=item_projectiles,type=!falling_block,type=!arrow,distance=..5] add cbp.shot_item_projectiles
 tag @n[tag=item_projectiles,type=!falling_block,type=!arrow,distance=..5] remove item_projectiles
 kill @s
-

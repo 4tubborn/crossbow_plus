@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "use_crossbow": {
+      "trigger": "shot_crossbow",
+      "conditions": {
+        "item": {
+          "items": "minecraft:crossbow",
+          "components": {
+            "minecraft:custom_data": {
+              "item_projectiles": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "cbp:shot/used_crossbow"
+  },
+  "sends_telemetry_event": false
+}

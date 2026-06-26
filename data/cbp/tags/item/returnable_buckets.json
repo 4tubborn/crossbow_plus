@@ -2,6 +2,10 @@
     "values":[
         "water_bucket",
         "lava_bucket",
-        "powder_snow_bucket"
+        "powder_snow_bucket",
+        "cod_bucket",
+        "salmon_bucket",
+        "axolotl_bucket",
+        "tadpole_bucket"
     ]
 }

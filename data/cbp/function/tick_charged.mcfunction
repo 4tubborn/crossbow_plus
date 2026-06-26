@@ -3,15 +3,16 @@
 #将projectile存到storage中，因为发射后弩的charged_projectiles会被立刻清空
 
 execute if entity @s[predicate=cbp:item_projectiles] run function cbp:modify_player/update_projectile_data with entity @s
-#ignore一些原版行为（装填箭、烟花火箭）
 
 execute if items entity @s weapon.mainhand crossbow unless data entity @s SelectedItem.components."minecraft:charged_projectiles" run item modify entity @s weapon.mainhand {function:"set_components",components:{custom_data:{ignore:false}}}
-execute if entity @s[predicate=!cbp:item_projectiles] if data entity @s SelectedItem.components."minecraft:charged_projectiles" unless items entity @s weapon.offhand * run return run item modify entity @s weapon.mainhand {function:"set_components",components:{custom_data:{ignore:true}}}
-execute if entity @s[predicate=!cbp:item_projectiles] if data entity @s SelectedItem.components."minecraft:charged_projectiles" if items entity @s weapon.offhand #arrows run return run item modify entity @s weapon.mainhand {function:"set_components",components:{custom_data:{ignore:true}}}
-execute if entity @s[predicate=!cbp:item_projectiles] if data entity @s SelectedItem.components."minecraft:charged_projectiles" if items entity @s weapon.offhand firework_rocket run return run item modify entity @s weapon.mainhand {function:"set_components",components:{custom_data:{ignore:true}}}
 
+execute as @s[predicate=cbp:item_projectiles] run return 1
+execute unless data entity @s SelectedItem.components."minecraft:charged_projectiles" run return 1
+#ignore一些原版行为（装填箭、烟花火箭）
+execute unless items entity @s weapon.offhand * run return run item modify entity @s weapon.mainhand {function:"set_components",components:{custom_data:{ignore:true}}}
+execute if items entity @s weapon.offhand #cbp:vanilla_projectiles run return run item modify entity @s weapon.mainhand {function:"set_components",components:{custom_data:{ignore:true}}}
 #更新弩的charged_projectiles组件
-execute if entity @s[predicate=!cbp:item_projectiles] if data entity @s SelectedItem.components."minecraft:charged_projectiles" unless data entity @s {"SelectedItem":{"components":{"minecraft:custom_data":{"ignore":true}}}} if items entity @s weapon.offhand #bundles run return run function cbp:modify_player/apply_projectiles with entity @s equipment.offhand.components."minecraft:bundle_contents"[0]
-execute if entity @s[predicate=!cbp:item_projectiles] if data entity @s SelectedItem.components."minecraft:charged_projectiles" unless data entity @s {"SelectedItem":{"components":{"minecraft:custom_data":{"ignore":true}}}} run return run function cbp:modify_player/apply_projectiles with entity @s equipment.offhand
+execute unless items entity @s weapon.mainhand crossbow[custom_data~{ignore:true}] if items entity @s weapon.offhand #bundles run return run function cbp:modify_player/apply_projectiles with entity @s equipment.offhand.components."minecraft:bundle_contents"[0]
+execute unless items entity @s weapon.mainhand crossbow[custom_data~{ignore:true}] run return run function cbp:modify_player/apply_projectiles with entity @s equipment.offhand
 
 #say "cannot motify component"

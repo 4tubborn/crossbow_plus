@@ -1,0 +1,2 @@
+data modify entity @n[type=falling_block,tag=item_projectiles,distance=..5] TileEntityData.patterns set from storage cbp tmp_projectile_id.components."minecraft:banner_patterns"
+data modify entity @n[type=falling_block,tag=item_projectiles,distance=..5] TileEntityData.CustomName set from storage cbp tmp_projectile_id.components."minecraft:custom_name"

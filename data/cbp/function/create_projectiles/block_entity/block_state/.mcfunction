@@ -1,0 +1,1 @@
+data modify entity @n[type=falling_block,tag=item_projectiles,distance=..5] BlockState.Properties set from storage cbp tmp_projectile_id.components."minecraft:block_state"

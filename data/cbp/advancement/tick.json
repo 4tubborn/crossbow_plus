@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "tick": {
+            "trigger": "tick",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "crossbow"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "cbp:tick"
+    }
+}
