@@ -145,5 +145,5 @@ scoreboard players set #minecraft:lightning cbp.ray 1
 scoreboard players set #minecraft:clay_ball cbp.ray 1
 
 tellraw @a [{"color":"gold","translate":"Crossbow Plus Datapack loaded successfully! You can click %s to delete the data of the pack.","with":[\
-{"text":"[here]","color":"green","click_event":{"action":"suggest_command","command":"/function cbp:remove"}}\
+{"text":"[here]","color":"green","click_event":{"action":"run_command","command":"/function cbp:remove"}}\
 ]}]
