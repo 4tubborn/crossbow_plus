@@ -1,3 +1,4 @@
+$data remove storage cbp projectile_id."$(UUID)"
 $data modify storage cbp projectile_id."$(UUID)" set from entity @s SelectedItem.components."minecraft:charged_projectiles".[0]
 #若没有组件也加上空组件，方便后续处理
 $data modify storage cbp projectile_id."$(UUID)".components merge value {}
